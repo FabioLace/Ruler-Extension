@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Align Ruler – pagina di test</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 40px; background: #f6f7f9; }
+  .row { display: flex; gap: 24px; margin-bottom: 32px; }
+  .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 16px; width: 180px; height: 90px; }
+  .off { margin-left: 3px; }      /* disallineata di 3px */
+  .half { margin-top: 0.5px; }    /* disallineata di mezzo pixel */
+  button { padding: 8px 14px; }
+</style>
+</head>
+<body>
+  <h1>Pagina di test</h1>
+  <div class="row">
+    <div class="card" id="a">Card A</div>
+    <div class="card" id="b">Card B</div>
+    <div class="card half" id="c">Card C (+0.5px in alto)</div>
+  </div>
+  <div class="row">
+    <div class="card" id="d">Card D (allineata ad A)</div>
+    <div class="card off" id="e">Card E (+3px a sinistra)</div>
+  </div>
+  <button onclick="alert('click arrivato alla pagina')">Bottone</button>
+</body>
+</html>
